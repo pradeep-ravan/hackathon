@@ -5,18 +5,18 @@ import AuthProvider from './Context/AuthProvider';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute'
-import Logout from './components/Logout'
+import './App.css'
 function App() {
   return (
    <Router>
      <AuthProvider>
-       <Navbar/>
+     <Navbar/>
      <Switch>
         <PrivateRoute exact path='/' component={Movies}/>
         <Route path='/login' component={Login}/>
         <Route path='/signup' component={Signup}/>
-        <Route path='/logout' component={Logout}/>
      </Switch>
+     
      </AuthProvider>
    </Router>
   );

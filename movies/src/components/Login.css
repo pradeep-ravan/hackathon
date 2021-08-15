@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    
+    
+}
+.email{
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    right: 50rem;
+    top: 30vh;
+    
+    
+}
+.etext{
+    height: 1.5rem;
+    width: 9rem;
+    position: fixed;
+    flex-direction: column;
+    right: 43rem;
+    top: 30vh;
+    border-right: 2px solid ;
+    
+}
+.pass{
+    height: 5rem;
+    width: 10rem;
+    position: fixed;
+    flex-direction: column;
+    right: 47.5rem;
+    top: 38vh;
+
+}
+.ptext{
+    height: 1.5rem;
+    width: 9rem;
+    position: fixed;
+    flex-direction: column;
+    right: 43rem;
+    top: 38vh;
+    border-right: 2px solid ;
+}
+.final{
+    background-color: red;
+            animation: scaleUp 1s;
+            animation-fill-mode: none;
+            animation: fadeAway 2s infinite ;
+            animation: shrinkInOut 1s;
+            position: fixed;
+            flex-direction: column;
+            height: 2rem;
+            width: 4rem;
+            right: 48rem;
+            top: 45vh;
+}
+.create{
+    background-color: rgba(5, 172, 75, 0.979);
+            animation: scaleUp 1s;
+            animation-fill-mode: none;
+            animation: fadeAway 2s infinite ;
+            position: fixed;
+            flex-direction: column;
+            height: 2rem;
+            width: 4rem;
+            right: 43rem;
+            top: 45vh;
+}
+@keyframes shrinkInOut {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes scaleUp{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+@keyframes fadeAway {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.7;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 0;
+    }
+}

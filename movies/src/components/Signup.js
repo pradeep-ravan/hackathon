@@ -2,6 +2,7 @@ import React,{useState,useContext,useEffect} from 'react'
 import {AuthContext} from '../Context/AuthProvider';
 import { useHistory } from 'react-router-dom';
 import { storage,database } from '../firebase';
+import './Signup.css'
 function Signup() {
     const[email,setEmail] = useState('');
     const[password,setPassword] = useState('');
@@ -66,22 +67,22 @@ function Signup() {
         <div>
             <form onSubmit={handleSignup}>
                 <div>
-                    <label htmlFor=''>Username</label>
-                    <input type='text' value={name} onChange={(e)=>setName(e.target.value)}/>
+                    <label className="name" htmlFor=''>Username</label>
+                    <input className="stext" type='text' value={name} onChange={(e)=>setName(e.target.value)}/>
                 </div>
                 <div>
-                <label htmlFor=''>Email</label>
-                    <input type='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                <label className="gmail" htmlFor=''>Email</label>
+                    <input className="gtext" type='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
                 </div>
                 <div>
-                <label htmlFor=''>password</label>
-                    <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                <label className="pwd" htmlFor=''>Password</label>
+                    <input className="ptxt" type='password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
                 </div>
                 <div>
-                    <label htmlFor='profile'>Profile image</label>
-                    <input type='file' accept='image/*' onChange={handleFileSubmit}></input>
+                    <label className="pfile" htmlFor='profile'>Profile image</label>
+                    <input className="pftxt" type='file' accept='image/*' onChange={handleFileSubmit}></input>
                 </div>
-                <button type='submit' disabled={loading}>login</button>
+                <button className="submt" type='submit' disabled={loading}>login</button>
             </form>
         </div>
     )

@@ -1,0 +1,77 @@
+.name{
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    right: 50rem;
+    top: 30vh;
+    
+    
+}
+.stext{
+    height: 1.5rem;
+    width: 9rem;
+    position: fixed;
+    flex-direction: column;
+    right: 41rem;
+    top: 30vh;
+    border-right: 2px solid ;
+}
+.gmail{
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    right: 49rem;
+    top: 38vh;
+    
+}
+.gtext{
+    height: 1.5rem;
+    width: 9rem;
+    position: fixed;
+    right: 41rem;
+    top: 38vh;
+    border-right: 2px solid ;
+}
+.pwd{
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    right: 50rem;
+    top: 47vh;
+}
+.ptxt{
+    height: 1.5rem;
+    width: 9rem;
+    position: fixed;
+    right: 41rem;
+    top: 47vh;
+    border-right: 2px solid ;
+}
+.pfile{
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    right: 51rem;
+    top: 54vh;
+}
+.pftxt{
+    height: 1.5rem;
+    width: 15rem;
+    position: fixed;
+    right: 35rem;
+    top: 54vh;
+    /* border-right: 2px solid ; */
+}
+.submt{
+    background-color: red;
+            animation: scaleUp 1s;
+            animation-fill-mode: none;
+            animation: fadeAway 2s infinite ;
+            animation: shrinkInOut 1s;
+            position: fixed;
+            flex-direction: column;
+            height: 2rem;
+            width: 4rem;
+            right: 45rem;
+            top: 61vh;
+}

@@ -6,7 +6,7 @@ function Navbar() {
         <nav className='nav-styles'>
             <h1>
                 <Link to='/' >
-                <img src="logos/png"/>
+                 LOGO
                </Link>
             </h1>
             <ul className='list'>

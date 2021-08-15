@@ -1,6 +1,7 @@
 import React,{useState,useContext, useEffect} from 'react'
 import { useHistory } from 'react-router-dom';
 import {AuthContext} from '../Context/AuthProvider';
+import './Login.css';
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
@@ -10,6 +11,7 @@ function Login() {
     const history = useHistory();
       const handleSignup = (e) =>{
           history.push('/signup')
+
       } 
      const handleSubmit = async(e)=>{
           console.log('hi');
@@ -36,16 +38,16 @@ function Login() {
         <div>
               <form onSubmit={handleSubmit} >
              <div>
-                <label htmlFor=''>Email</label>
-                    <input type='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                <label className="email" htmlFor=''>Email</label>
+                    <input className="etext" type='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
                 </div>
                 <div>
-                <label htmlFor=''>Password</label>
-                    <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                <label className="pass" htmlFor=''>Password</label>
+                    <input className="ptext" type='password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
                 </div>
-                <button type='submit' disabled={loading}>Login</button>
+                <button className="final" type='submit' disabled={loading}>Login</button>
                 <div>
-                  <button onClick={handleSignup}>SignUP</button>
+                  <button className="create" onClick={handleSignup}>SignUP</button>
                 </div>
                 {error?<h1>{error}</h1>:<></>}
                 </form>
