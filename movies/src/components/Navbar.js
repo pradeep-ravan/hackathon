@@ -13,9 +13,9 @@ function Navbar() {
                 <Link to='/'>
                 <li>Movies</li>
                 </Link>
-                <Link to='/logout'>
+                {/* <Link to='/logout'>
                 <li>Logout</li>
-                </Link>
+                </Link> */}
                 
             </ul>
         </nav>
